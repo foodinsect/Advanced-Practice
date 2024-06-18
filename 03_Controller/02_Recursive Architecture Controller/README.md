@@ -14,6 +14,15 @@ This project implements a matrix multiplication system with quantization and deq
 6. **top.v**: This is the top-level module that integrates the quantization, MAC, and dequantization modules. It controls the flow of data through these stages and manages the overall operation.
 7. **bram.v**: This module implements Block RAM (BRAM) for storing input data and weights. It provides the necessary read and write interfaces for accessing the stored values.
 
+## Waveform  
+![Recursive Ctrl Waveform](https://github.com/foodinsect/Verilog-modules/assets/36304709/dbf2cdec-b23d-47c4-bfbc-3bffd541a4fe)  
+
+
+  
+## RTL Schemetic  
+![Recursive Ctrl RTL](https://github.com/foodinsect/Verilog-modules/assets/36304709/6a2428d4-1079-44fc-b8f1-321d308e2963)  
+  
+  
 ## Module Descriptions
 
 ### controller.v
