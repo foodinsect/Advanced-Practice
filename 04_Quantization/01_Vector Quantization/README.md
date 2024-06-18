@@ -11,6 +11,12 @@ This project implements a matrix multiplication system with quantization and deq
 3. **top.v**: The top-level module that integrates quantization, MAC, and dequantization modules, controlling the data flow through these stages and managing the overall operation.
 4. **tb_top.v**: This is the testbench for the top-level module. It simulates the behavior of the `top.v` module, providing test vectors and checking the output.
 
+## Structure
+![image](https://github.com/foodinsect/Verilog-modules/assets/36304709/f0b4f8e7-ab59-41d9-9a8d-1fb42f1fc195)
+
+![image](https://github.com/foodinsect/Verilog-modules/assets/36304709/6dd4dac2-9fe3-42c6-96ab-c0ded111629c)
+
+
 ## Waveform  
 ![Vector_QDQ](https://github.com/foodinsect/Verilog-modules/assets/36304709/e9fb4eee-c341-441e-b0c1-9a3b7d773b5d)  
   
