@@ -18,6 +18,11 @@ This project implements a Matrix Multiplier using Multiply-Accumulate (MAC) unit
 #### Description
 The MAC module performs the multiply-accumulate operation.
 
+## Structure
+![image](https://github.com/foodinsect/Verilog-modules/assets/36304709/e9366373-f3f6-4b95-8112-bce49a34981d)  
+
+
+
 #### Ports
 
 - `rstn_i`: Active-low reset signal.
