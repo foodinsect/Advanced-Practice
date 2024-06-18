@@ -9,6 +9,10 @@ This project contains a Verilog implementation of a Multiply-Accumulate (MAC) un
 1. **MAC.v**: The Verilog implementation of the MAC unit.
 2. **tb_MAC.v**: The testbench for simulating and verifying the MAC unit.
 
+## Structure  
+![image](https://github.com/foodinsect/Verilog-modules/assets/36304709/418afe17-23fd-4e90-aacd-5e6ab899ce8d)  
+
+  ![image](https://github.com/foodinsect/Verilog-modules/assets/36304709/925e19db-96d0-4ade-b479-97b9646822b5)  
 
 ## Waveform  
 ![Vector Multipiler (MAC) Waveform](https://github.com/foodinsect/Verilog-modules/assets/36304709/acd6be94-013a-43cf-9974-b3f14aa67289)  
