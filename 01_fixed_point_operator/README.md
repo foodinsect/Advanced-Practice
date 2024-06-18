@@ -9,7 +9,9 @@ This repository contains the Verilog testbench for the `top` module, which perfo
 - `fp_operator.v`: Verilog module implementing fixed-point addition and multiplication.
 - `tb_top.v`: Testbench for the `top` module.
 - `README.md`: This file, providing an overview and instructions for running the simulation.
-
+  
+![image](https://github.com/foodinsect/Verilog-modules/assets/36304709/3792cae7-24b0-4861-90d5-54f6f9b04459)  
+  
 ## Module Description
 
 ### `fp_operator.v`
