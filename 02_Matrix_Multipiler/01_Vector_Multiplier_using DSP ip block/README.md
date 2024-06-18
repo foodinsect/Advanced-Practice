@@ -11,11 +11,12 @@ This project contains a Verilog implementation of a Multiply-Accumulate (MAC) un
 
 
 ## Waveform  
-![fp_op_waveform](https://github.com/foodinsect/Verilog-modules/assets/36304709/eddfb242-de9f-493c-8127-92b2bdb4ba8e)  
-
-## RTL Schemetic  
-![RTL Schemetic](https://github.com/foodinsect/Verilog-modules/assets/36304709/bd262116-46c1-4660-835d-829401b36be8)  
+![Vector Multipiler (MAC) Waveform](https://github.com/foodinsect/Verilog-modules/assets/36304709/acd6be94-013a-43cf-9974-b3f14aa67289)  
   
 
+## RTL Schemetic  
+![Vector Multipiler(MAC) RTL](https://github.com/foodinsect/Verilog-modules/assets/36304709/53201118-cb74-49bd-b56e-7e09ef3612e3)  
+
+  
 ## Conclusion
 This README provides an overview of the MAC module and its testbench. The testbench applies a series of inputs to the MAC module to ensure its correct functionality. The project is suitable for FPGA or ASIC design verification purposes. For any issues or improvements, please feel free to contribute or raise an issue.
