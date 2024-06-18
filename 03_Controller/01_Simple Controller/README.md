@@ -16,6 +16,12 @@ This project implements a matrix multiplication system with quantization and deq
 
 5. **ctrl_fsm.v**: This module implements the control Finite State Machine (FSM) that manages the state transitions and control signals for the overall system.
 
+## Structure
+![image](https://github.com/foodinsect/Verilog-modules/assets/36304709/8adb3dee-4bee-4a4d-8824-2b08db0d2363)
+![image](https://github.com/foodinsect/Verilog-modules/assets/36304709/899db373-28fd-4e82-8e4e-5e6f4483aa57)
+![image](https://github.com/foodinsect/Verilog-modules/assets/36304709/1da7e6cb-c5f6-483b-bc8c-f77762c74e75)
+
+
 ## Waveform  
 ![Simple_controller_waveform](https://github.com/foodinsect/Verilog-modules/assets/36304709/95dcc993-e69f-4f7d-b9a9-d6169dc0b9bf)  
 
