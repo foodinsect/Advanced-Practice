@@ -9,6 +9,10 @@ This project contains a Verilog implementation of a matrix multiplier (`matrix_m
 1. **matrix_multypiler.v**: The Verilog implementation of the matrix multiplier.
 2. **tb_matmul.v**: The testbench for simulating and verifying the matrix multiplier.
 
+## Structure
+![image](https://github.com/foodinsect/Verilog-modules/assets/36304709/f3cdab4c-91dd-4de1-8491-7ff41f555f30)
+
+
 ## matrix_multypiler Module
 
 ### Parameters
