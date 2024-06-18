@@ -17,6 +17,10 @@ This project implements a complex matrix multiplication system that involves qua
 9. **layer2.v**: Layer 2 module that integrates local control and processing units, handling the second stage of matrix multiplication.
 10. **local_ctrl_0.v**: Local controller for layer 0, managing state transitions and control signals for the initial processing layer.
 
+## Structure
+![image](https://github.com/foodinsect/Verilog-modules/assets/36304709/149a1332-1319-4553-8039-594e9dfd92ca)
+
+
 ## Waveform  
 ![Streamline Controller](https://github.com/foodinsect/Verilog-modules/assets/36304709/744d8e46-8c8e-4600-9225-5ad04e1b8ae8)  
   
