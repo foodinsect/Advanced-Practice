@@ -25,3 +25,6 @@ parameter maccnt = 8
 - OUTPUT_WIDTH: Width of the output data.
 - MAC_NUM: Number of multiply-accumulate (MAC) units.
 
+## Waveform  
+![matmul_waveform](https://github.com/foodinsect/Verilog-modules/assets/36304709/22230c94-72ec-4c85-9651-90dec2c6554b)  
+  
