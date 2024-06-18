@@ -98,6 +98,11 @@ The top module uses multiple instances of the matrix multiplier module and manag
 ![Matmul_waveform](https://github.com/foodinsect/Verilog-modules/assets/36304709/f1f0ac9f-6230-46eb-be52-e370c609e8d5)  
 
 
+## Data
+![image](https://github.com/foodinsect/Verilog-modules/assets/36304709/9ebe9661-c6db-4d5b-8858-34c25b652490)  
+
+
+
 #### Description
 The testbench verifies the functionality of the top module.
 
