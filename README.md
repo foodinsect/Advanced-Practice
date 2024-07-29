@@ -1,4 +1,4 @@
-# 💾 Verilog Modules
+# 💾 Advanced-Practice
 
 Welcome to the Verilog Modules repository! This repository contains various Verilog modules created as part of the Digital System Design course. The modules are organized into different directories based on their functionality and purpose.
 
