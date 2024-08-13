@@ -102,16 +102,10 @@ The top module uses multiple instances of the matrix multiplier module and manag
 
 
 ## Data
-<<<<<<< HEAD
 ![image](https://github.com/foodinsect/Verilog-modules/assets/36304709/9ebe9661-c6db-4d5b-8858-34c25b652490) 
 
 ## RTL Schematic
-![RTL_Schematic](image.png)
-=======
-![image](https://github.com/foodinsect/Verilog-modules/assets/36304709/9ebe9661-c6db-4d5b-8858-34c25b652490)  
-
->>>>>>> e6a391bb973068d733cecf23b6135a9d33cd2d5d
-
+![RTL_Schematic](https://github.com/foodinsect/Verilog-modules/assets/36304709/9ebe9661-c6db-4d5b-8858-34c25b652490)  
 
 #### Description
 The testbench verifies the functionality of the top module.
