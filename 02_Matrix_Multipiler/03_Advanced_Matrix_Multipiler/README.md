@@ -67,6 +67,31 @@ The matrix multiplier module uses multiple MAC units to perform matrix multiplic
 
 The matrix multiplier module instantiates multiple MAC units and manages their inputs and outputs to perform matrix multiplication.
 
+<<<<<<< HEAD
+=======
+### Top Module
+
+**File**: top.v
+
+#### Description
+The top module combines multiple matrix multiplier modules to perform complex matrix operations.
+
+#### Ports
+
+- `clk_i`: Clock signal.
+- `rstn_i`: Active-low reset signal.
+- `en_i`: Enable signal.
+- `valid_i`: Valid input signal.
+- `din1_i`: First input data.
+- `din2_i`: Second input data.
+- `din3_i`: Third input data.
+- `done_o`: Done signal.
+- `matmul_o`: Output data.
+
+#### Functionality
+
+The top module uses multiple instances of the matrix multiplier module and manages their inputs and outputs.
+>>>>>>> e6a391bb973068d733cecf23b6135a9d33cd2d5d
 
 ### Testbench
 
@@ -77,10 +102,15 @@ The matrix multiplier module instantiates multiple MAC units and manages their i
 
 
 ## Data
+<<<<<<< HEAD
 ![image](https://github.com/foodinsect/Verilog-modules/assets/36304709/9ebe9661-c6db-4d5b-8858-34c25b652490) 
 
 ## RTL Schematic
 ![RTL_Schematic](image.png)
+=======
+![image](https://github.com/foodinsect/Verilog-modules/assets/36304709/9ebe9661-c6db-4d5b-8858-34c25b652490)  
+
+>>>>>>> e6a391bb973068d733cecf23b6135a9d33cd2d5d
 
 
 #### Description

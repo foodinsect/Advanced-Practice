@@ -4,6 +4,7 @@ module tb_top;
     reg rstn;
     reg valid_i;
     reg en;
+<<<<<<< HEAD
     reg rd_temp_en;
     reg wr_temp_en;
     reg [2:0] rd_temp_addr;
@@ -13,6 +14,12 @@ module tb_top;
     reg [7:0] win_2;
     reg [1:0] mode;
     reg clear;
+=======
+    reg [63:0]  din; // 8bit x 8
+    reg [7:0]   win;
+    reg [7:0]   win_2;
+    
+>>>>>>> e6a391bb973068d733cecf23b6135a9d33cd2d5d
     wire done_o;
     wire [255:0] matmul;
 
@@ -27,7 +34,11 @@ module tb_top;
     initial begin
         rstn = 1;
         #20 rstn = 0;
+<<<<<<< HEAD
         en = 0; valid_i = 0; din = 0; win = 0; win_2 = 0; wr_temp_addr = 3'b000; rd_temp_addr = 8'h00; wr_temp_en = 0; rd_temp_en = 0;
+=======
+        en = 0; valid_i = 0; din = 0; win = 0; win_2 = 0;
+>>>>>>> e6a391bb973068d733cecf23b6135a9d33cd2d5d
         #10 rstn = 1;
     end
 
@@ -35,7 +46,11 @@ module tb_top;
     initial begin
         #45
         wait(rstn);
+<<<<<<< HEAD
         mode = 2'b01;
+=======
+        
+>>>>>>> e6a391bb973068d733cecf23b6135a9d33cd2d5d
         // First set of inputs
         #10 en = 1; din = {8'h01, 8'h02, 8'h01, 8'h01, 8'h01, 8'h02, 8'h03, 8'h01}; win = 8'h01; 
         #10 en = 1; din = {8'h02, 8'h03, 8'h01, 8'h02, 8'h02, 8'h01, 8'h03, 8'h01}; win = 8'h01; 
@@ -45,72 +60,127 @@ module tb_top;
         valid_i = 1;
         #10 en = 0; din = 0; win = 0;
         valid_i = 0;
+<<<<<<< HEAD
         #10 en = 0; din = 0; win = 0; wr_temp_addr = 3'b000;
         
         // Second set of inputs
         #10 en = 1; din = {8'h01, 8'h02, 8'h01, 8'h01, 8'h01, 8'h02, 8'h03, 8'h01}; win = 8'h03; wr_temp_en = 1;
         #10 en = 1; din = {8'h02, 8'h03, 8'h01, 8'h02, 8'h02, 8'h01, 8'h03, 8'h01}; win = 8'h01; wr_temp_en = 0; clear= 1;
         #10 en = 1; din = {8'h03, 8'h02, 8'h01, 8'h03, 8'h01, 8'h01, 8'h02, 8'h01}; win = 8'h01; clear= 0;
+=======
+        #10 en = 0; din = 0; win = 0;
+        
+        // Second set of inputs
+        #10 en = 1; din = {8'h01, 8'h02, 8'h01, 8'h01, 8'h01, 8'h02, 8'h03, 8'h01}; win = 8'h03; 
+        #10 en = 1; din = {8'h02, 8'h03, 8'h01, 8'h02, 8'h02, 8'h01, 8'h03, 8'h01}; win = 8'h01; 
+        #10 en = 1; din = {8'h03, 8'h02, 8'h01, 8'h03, 8'h01, 8'h01, 8'h02, 8'h01}; win = 8'h01; 
+>>>>>>> e6a391bb973068d733cecf23b6135a9d33cd2d5d
         #10 en = 1; din = {8'h01, 8'h01, 8'h02, 8'h01, 8'h02, 8'h01, 8'h01, 8'h02}; win = 8'h02; 
         
         valid_i = 1;
         #10 en = 0; din = 0; win = 0;
         valid_i = 0;
+<<<<<<< HEAD
         #10 en = 0; din = 0; win = 0; wr_temp_addr = 3'b001;
         
         // Third set of inputs
         #10 en = 1; din = {8'h01, 8'h02, 8'h01, 8'h01, 8'h01, 8'h02, 8'h03, 8'h01}; win = 8'h02; wr_temp_en = 1;
         #10 en = 1; din = {8'h02, 8'h03, 8'h01, 8'h02, 8'h02, 8'h01, 8'h03, 8'h01}; win = 8'h02; wr_temp_en = 0; clear= 1;
         #10 en = 1; din = {8'h03, 8'h02, 8'h01, 8'h03, 8'h01, 8'h01, 8'h02, 8'h01}; win = 8'h01; clear= 0;
+=======
+        #10 en = 0; din = 0; win = 0;
+        
+        // Third set of inputs
+        #10 en = 1; din = {8'h01, 8'h02, 8'h01, 8'h01, 8'h01, 8'h02, 8'h03, 8'h01}; win = 8'h02; 
+        #10 en = 1; din = {8'h02, 8'h03, 8'h01, 8'h02, 8'h02, 8'h01, 8'h03, 8'h01}; win = 8'h02; 
+        #10 en = 1; din = {8'h03, 8'h02, 8'h01, 8'h01, 8'h01, 8'h01, 8'h02, 8'h01}; win = 8'h01; 
+>>>>>>> e6a391bb973068d733cecf23b6135a9d33cd2d5d
         #10 en = 1; din = {8'h01, 8'h01, 8'h02, 8'h01, 8'h02, 8'h01, 8'h01, 8'h02}; win = 8'h03; 
         
         valid_i = 1;
         #10 en = 0; din = 0; win = 0;
         valid_i = 0;
+<<<<<<< HEAD
         #10 en = 0; din = 0; win = 0; wr_temp_addr = 3'b010;
         
         // Fourth set of inputs
         #10 en = 1; din = {8'h01, 8'h02, 8'h01, 8'h01, 8'h01, 8'h02, 8'h03, 8'h01}; win = 8'h01; wr_temp_en = 1;
         #10 en = 1; din = {8'h02, 8'h03, 8'h01, 8'h02, 8'h02, 8'h01, 8'h03, 8'h01}; win = 8'h01; wr_temp_en = 0; clear= 1;
         #10 en = 1; din = {8'h03, 8'h02, 8'h01, 8'h03, 8'h01, 8'h01, 8'h02, 8'h01}; win = 8'h03; clear= 0;
+=======
+        #10 en = 0; din = 0; win = 0;
+        
+        // Fourth set of inputs
+        #10 en = 1; din = {8'h01, 8'h02, 8'h01, 8'h01, 8'h01, 8'h02, 8'h03, 8'h01}; win = 8'h01; 
+        #10 en = 1; din = {8'h02, 8'h03, 8'h01, 8'h02, 8'h02, 8'h01, 8'h03, 8'h01}; win = 8'h01; 
+        #10 en = 1; din = {8'h03, 8'h02, 8'h01, 8'h03, 8'h01, 8'h01, 8'h02, 8'h01}; win = 8'h03; 
+>>>>>>> e6a391bb973068d733cecf23b6135a9d33cd2d5d
         #10 en = 1; din = {8'h01, 8'h01, 8'h02, 8'h01, 8'h02, 8'h01, 8'h01, 8'h02}; win = 8'h01; 
         
         valid_i = 1;
         #10 en = 0; din = 0; win = 0;
         valid_i = 0;
+<<<<<<< HEAD
         #10 en = 0; din = 0; win = 0; wr_temp_addr = 3'b011;
         
         // Fifth set of inputs
         #10 en = 1; din = {8'h01, 8'h02, 8'h01, 8'h01, 8'h01, 8'h02, 8'h03, 8'h01}; win = 8'h01; wr_temp_en = 1;
         #10 en = 1; din = {8'h02, 8'h03, 8'h01, 8'h02, 8'h02, 8'h01, 8'h03, 8'h01}; win = 8'h01; wr_temp_en = 0; clear= 1;
         #10 en = 1; din = {8'h03, 8'h02, 8'h01, 8'h03, 8'h01, 8'h01, 8'h02, 8'h01}; win = 8'h01; clear= 0;
+=======
+        #10 en = 0; din = 0; win = 0;
+        
+        // Fifth set of inputs
+        #10 en = 1; din = {8'h01, 8'h02, 8'h01, 8'h01, 8'h01, 8'h02, 8'h03, 8'h01}; win = 8'h01; 
+        #10 en = 1; din = {8'h02, 8'h03, 8'h01, 8'h02, 8'h02, 8'h01, 8'h03, 8'h01}; win = 8'h01; 
+        #10 en = 1; din = {8'h03, 8'h02, 8'h01, 8'h03, 8'h01, 8'h01, 8'h02, 8'h01}; win = 8'h01; 
+>>>>>>> e6a391bb973068d733cecf23b6135a9d33cd2d5d
         #10 en = 1; din = {8'h01, 8'h01, 8'h02, 8'h01, 8'h02, 8'h01, 8'h01, 8'h02}; win = 8'h01; 
         
         valid_i = 1;
         #10 en = 0; din = 0; win = 0;
         valid_i = 0;
+<<<<<<< HEAD
         #10 en = 0; din = 0; win = 0; wr_temp_addr = 3'b100;
         
         // Sixth set of inputs
         #10 en = 1; din = {8'h01, 8'h02, 8'h01, 8'h01, 8'h01, 8'h02, 8'h03, 8'h01}; win = 8'h01; wr_temp_en = 1;
         #10 en = 1; din = {8'h02, 8'h03, 8'h01, 8'h02, 8'h02, 8'h01, 8'h03, 8'h01}; win = 8'h02; wr_temp_en = 0;  clear= 1;
         #10 en = 1; din = {8'h03, 8'h02, 8'h01, 8'h03, 8'h01, 8'h01, 8'h02, 8'h01}; win = 8'h03; clear= 0;
+=======
+        #10 en = 0; din = 0; win = 0;
+        
+        // Sixth set of inputs
+        #10 en = 1; din = {8'h01, 8'h02, 8'h01, 8'h01, 8'h01, 8'h02, 8'h03, 8'h01}; win = 8'h01; 
+        #10 en = 1; din = {8'h02, 8'h03, 8'h01, 8'h02, 8'h02, 8'h01, 8'h03, 8'h01}; win = 8'h02; 
+        #10 en = 1; din = {8'h03, 8'h02, 8'h01, 8'h03, 8'h01, 8'h01, 8'h02, 8'h01}; win = 8'h03; 
+>>>>>>> e6a391bb973068d733cecf23b6135a9d33cd2d5d
         #10 en = 1; din = {8'h01, 8'h01, 8'h02, 8'h01, 8'h02, 8'h01, 8'h01, 8'h02}; win = 8'h02; 
         
         valid_i = 1;
         #10 en = 0; din = 0; win = 0;
         valid_i = 0;
+<<<<<<< HEAD
         #10 en = 0; din = 0; win = 0; wr_temp_addr = 3'b101;
         
         // Seventh set of inputs
         #10 en = 1; din = {8'h01, 8'h02, 8'h01, 8'h01, 8'h01, 8'h02, 8'h03, 8'h01}; win = 8'h02; wr_temp_en = 1;
         #10 en = 1; din = {8'h02, 8'h03, 8'h01, 8'h02, 8'h02, 8'h01, 8'h03, 8'h01}; win = 8'h03; wr_temp_en = 0; clear= 1;
         #10 en = 1; din = {8'h03, 8'h02, 8'h01, 8'h03, 8'h01, 8'h01, 8'h02, 8'h01}; win = 8'h01; clear= 0;
+=======
+        #10 en = 0; din = 0; win = 0;
+        
+        // Seventh set of inputs
+        #10 en = 1; din = {8'h01, 8'h02, 8'h01, 8'h01, 8'h01, 8'h02, 8'h03, 8'h01}; win = 8'h02; 
+        #10 en = 1; din = {8'h02, 8'h03, 8'h01, 8'h02, 8'h02, 8'h01, 8'h03, 8'h01}; win = 8'h03; 
+        #10 en = 1; din = {8'h03, 8'h02, 8'h01, 8'h03, 8'h01, 8'h01, 8'h02, 8'h01}; win = 8'h01; 
+>>>>>>> e6a391bb973068d733cecf23b6135a9d33cd2d5d
         #10 en = 1; din = {8'h01, 8'h01, 8'h02, 8'h01, 8'h02, 8'h01, 8'h01, 8'h02}; win = 8'h01; 
         
         valid_i = 1;
         #10 en = 0; din = 0; win = 0;
         valid_i = 0;
+<<<<<<< HEAD
         #10 en = 0; din = 0; win = 0; wr_temp_addr = 3'b110;
         
         // Eighth set of inputs
@@ -142,6 +212,37 @@ module tb_top;
         #10 win_2 = 8'h00;
         valid_i = 0;
         en = 0; din = 0; win = 0; rd_temp_en = 0;
+=======
+        #10 en = 0; din = 0; win = 0;
+        
+        // Eighth set of inputs
+        #10 en = 1; din = {8'h01, 8'h02, 8'h01, 8'h01, 8'h01, 8'h02, 8'h03, 8'h01}; win = 8'h01; 
+        #10 en = 1; din = {8'h02, 8'h03, 8'h01, 8'h02, 8'h02, 8'h01, 8'h03, 8'h01}; win = 8'h01; 
+        #10 en = 1; din = {8'h03, 8'h02, 8'h01, 8'h03, 8'h01, 8'h01, 8'h02, 8'h01}; win = 8'h01; 
+        #10 en = 1; din = {8'h01, 8'h01, 8'h02, 8'h01, 8'h02, 8'h01, 8'h01, 8'h02}; win = 8'h01; 
+        #10 din = 0; win = 0;
+        
+        en = 1;
+        valid_i = 1;
+        #10 din = 0; win = 0;
+        valid_i = 0;
+        en = 0; din = 0; win = 0;
+        
+        #20 
+        // Apply win_2 stimuli
+        #10 en = 1; win_2 = 8'h01;
+        #10 win_2 = 8'h02;
+        #10 win_2 = 8'h02;
+        #10 win_2 = 8'h01;
+        #10 win_2 = 8'h03;
+        #10 win_2 = 8'h02;
+        #10 win_2 = 8'h01;    
+        #10 win_2 = 8'h02;
+        valid_i = 1; 
+        #10 win_2 = 8'h00;
+        valid_i = 0;
+        en = 0; din = 0; win = 0;
+>>>>>>> e6a391bb973068d733cecf23b6135a9d33cd2d5d
     end
 
     // Stop the simulation after some time
@@ -158,6 +259,7 @@ module tb_top;
         .rstn_i(rstn),
         .valid_i(valid_i),
         .en_i(en),
+<<<<<<< HEAD
         .mode(mode),
         .clear(clear),
         .din1_i(din),
@@ -167,6 +269,11 @@ module tb_top;
         .wr_temp_en(wr_temp_en),
         .rd_temp_addr(rd_temp_addr),
         .wr_temp_addr(wr_temp_addr),
+=======
+        .din1_i(din),
+        .din2_i(win),
+        .din3_i(win_2),
+>>>>>>> e6a391bb973068d733cecf23b6135a9d33cd2d5d
         .done_o(done_o),
         .matmul_o(matmul)
     );

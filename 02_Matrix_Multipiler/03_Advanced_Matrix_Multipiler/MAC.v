@@ -5,7 +5,10 @@ module MAC(
     input wire                  clk_i,
     input wire                  dsp_enable_i,
     input wire                  dsp_valid_i,
+<<<<<<< HEAD
     input wire                  clear_i,
+=======
+>>>>>>> e6a391bb973068d733cecf23b6135a9d33cd2d5d
     input wire signed   [7:0]   dsp_input_i,
     input wire signed   [7:0]   dsp_weight_i,
 
@@ -26,10 +29,14 @@ assign dsp_valid_o = dsp_valid_delay[1];
 always @(posedge clk_i or negedge rstn_i) begin
     if (!rstn_i) begin
         partial_sum <= 0;
+<<<<<<< HEAD
     end else if (clear_i) begin
         partial_sum <= 0;
     end
     else begin
+=======
+    end else begin
+>>>>>>> e6a391bb973068d733cecf23b6135a9d33cd2d5d
         partial_sum <= $signed({dsp_temp[31], dsp_temp[29:0]});
     end 
 end
@@ -50,8 +57,12 @@ always @(posedge clk_i or negedge rstn_i) begin
         dsp_output <= 0;
     end else if (dsp_valid_delay[1]) begin
         dsp_output <= dsp_temp;     // Update output only if the delayed valid signal is high
+<<<<<<< HEAD
     end 
     else begin
+=======
+    end else begin
+>>>>>>> e6a391bb973068d733cecf23b6135a9d33cd2d5d
         dsp_output <= 0;
     end
 end 
