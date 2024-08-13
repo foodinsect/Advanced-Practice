@@ -95,7 +95,7 @@ The top module uses multiple instances of the matrix multiplier module and manag
 **File**: tb_top.v
 
 ## Waveform  
-![Matmul_waveform](https://github.com/foodinsect/Verilog-modules/assets/36304709/f1f0ac9f-6230-46eb-be52-e370c609e8d5)  
+![Matmul_waveform](https://github.com/user-attachments/assets/703b57b5-f1b3-4aad-bffc-d682e5855241)
 
 
 ## Data
