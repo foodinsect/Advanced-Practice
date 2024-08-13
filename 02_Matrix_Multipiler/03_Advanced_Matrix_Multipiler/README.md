@@ -67,8 +67,6 @@ The matrix multiplier module uses multiple MAC units to perform matrix multiplic
 
 The matrix multiplier module instantiates multiple MAC units and manages their inputs and outputs to perform matrix multiplication.
 
-<<<<<<< HEAD
-=======
 ### Top Module
 
 **File**: top.v
@@ -91,7 +89,6 @@ The top module combines multiple matrix multiplier modules to perform complex ma
 #### Functionality
 
 The top module uses multiple instances of the matrix multiplier module and manages their inputs and outputs.
->>>>>>> e6a391bb973068d733cecf23b6135a9d33cd2d5d
 
 ### Testbench
 
@@ -105,7 +102,7 @@ The top module uses multiple instances of the matrix multiplier module and manag
 ![image](https://github.com/foodinsect/Verilog-modules/assets/36304709/9ebe9661-c6db-4d5b-8858-34c25b652490) 
 
 ## RTL Schematic
-![RTL_Schematic](https://github.com/foodinsect/Verilog-modules/assets/36304709/9ebe9661-c6db-4d5b-8858-34c25b652490)  
+![RTL_Schematic](https://github.com/user-attachments/assets/b2f3acd4-e04a-4f8f-b041-e48f600d7cd1)
 
 #### Description
 The testbench verifies the functionality of the top module.
